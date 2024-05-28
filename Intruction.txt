@@ -1,0 +1,33 @@
+Создание виртуального окружения
+pipenv shell
+
+Установка зависимостей в виртуальное окружение
+pipenv install django==4.0.0 - (Задает струкруту проекта MTV)
+pipenv install djangorestframefork - (Плзволяет создавать REST API)
+pipenv install pillow - (Для работы с изображениями)
+pipenv install pipenv
+
+Создание проекта
+django-admin startproject Settings - (Для того, чтобы папка с настройками имела нужное название. Потом переименуем внешнюю папку)
+
+Создание приложений Django
+python manage.py startapp API
+python manage.py startapp ModelsApp
+
+Подготовка структуры приложения
+Замена файлов сущностей на модули (папки)
+
+Подготовка тестового запроса
+Создаем файл urls внутри нужного приложения (API)
+
+Подключаем созданный файл в основной файл urls настроек
+from django.urls import path, include
+path('api/', include('API.urls'))
+
+Создаем View
+Создаем urls
+
+Создали модели
+
+Создать миграции и применить
+python manage.py makemigrations
