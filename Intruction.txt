@@ -31,3 +31,8 @@ path('api/', include('API.urls'))
 
 Создать миграции и применить
 python manage.py makemigrations
+
+Создание суперпользователя
+python manage.py createsuperuser
+
+todo Получение всех фильтров и задач из БД
