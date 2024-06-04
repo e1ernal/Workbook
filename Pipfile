@@ -8,6 +8,7 @@ django = "==4.0.0"
 djangorestframework = "*"
 pillow = "*"
 pipenv = "*"
+django-service-objects = "*"
 
 [dev-packages]
 
