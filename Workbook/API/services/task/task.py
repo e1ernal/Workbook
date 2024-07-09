@@ -10,3 +10,4 @@ class TaskListService(Service):
     @property
     def _tasks(self):
         return Task.objects.all()
+
