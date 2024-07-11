@@ -11,7 +11,8 @@ from API.services.task.task_detail import TaskDetailService
 class TaskListView(APIView):
 
     def get(self, request, *args, **kwargs):
-        tasks = TaskListService.execute({})
+        filters = request.query_params.getlist("filters")
+        tasks = TaskListService.execute({"filters": filters})
         serializer = TaskListSerializer(tasks, many=True)
         return Response(serializer.data)
 
